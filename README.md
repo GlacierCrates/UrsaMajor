@@ -1,4 +1,26 @@
-# aurelia-skeleton-navigation (typescript)
+# Ursa Major
+
+## Development Environment
+
+### Prerequisites
+
+* NodeJS 6.6.0 (comes with NPM 3.10)
+* NPM globally installed modules
+  * Gulp `npm install -g gulp`
+  * JSPM `npm install -g jspm`
+  * Typings `npm install -g typings`
+  * Unzip (on Windows) `npm install -g unzip`
+  * Electron `npm install -g electron-prebuilt`
+* Inside app folder, restore packages:
+  * `npm install`
+  * `jspm install -y`
+
+### Build and run
+
+* `gulp build`
+* `electron index.js`
+
+## aurelia-skeleton-navigation (typescript)
 
 ## Running The App
 
