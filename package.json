@@ -1,24 +1,23 @@
 {
-  "name": "aurelia-skeleton-navigation-typescript",
-  "version": "1.0.0",
-  "description": "A starter kit for building a standard navigation-style app with Aurelia and TypeScript.",
+  "name": "ursa-major",
+  "version": "0.1.0",
+  "description": "A simple pomodoro timer playing tracks like MTCB",
   "keywords": [
-    "aurelia",
-    "navigation",
-    "skeleton",
-    "typescript",
-    "vscode"
+    "ursa-major",
+    "glaciercrates",
+    "pomodoro",
+    "mctb"
   ],
-  "homepage": "http://aurelia.io",
+  "homepage": "https://github.com/GlacierCrates/UrsaMajor",
   "bugs": {
-    "url": "https://github.com/aurelia/skeleton-navigation-typescript/issues"
+    "url": "https://github.com/GlacierCrates/UrsaMajor/issues"
   },
-  "license": "CC0-1.0",
-  "author": "Mike Graham <mgraham@technicalmedia.com> (http://cmichaelgraham.io/)",
+  "license": "GPL-3.0",
+  "author": "Glacier Crates Team (http://www.glaciercrates.com/): Gerald Minasch, Ricky Blankenaufulland",
   "main": "dist/main.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/aurelia/skeleton-navigation-typescript"
+    "url": "https://github.com/GlacierCrates/UrsaMajor"
   },
   "scripts": {
     "prepublish": "./node_modules/.bin/typings install",
