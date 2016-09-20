@@ -250,3 +250,15 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+
+# Aurelia Skeleton
+jspm_packages
+bower_components
+.idea
+.DS_STORE
+/dist
+build/reports
+coverage
+test/e2e/dist
+/typings
+/export
