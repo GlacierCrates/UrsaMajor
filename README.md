@@ -20,6 +20,7 @@ HTML5 / Electron application with tray icon and desktop notifications.
 * Inside app folder, restore packages:
   * `npm install`
   * `jspm install -y`
+  * `typings install`
 
 ### Build and run
 
