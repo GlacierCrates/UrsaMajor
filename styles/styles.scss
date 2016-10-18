@@ -199,24 +199,24 @@ nav-browser div ul {
   display: block;
   list-style-type: none;
   padding: 0;
-}
 
-nav-browser div ul li {
-  width: 120px;
-  height: 120px;
-  border-bottom: 1px solid black;
-  background: silver;
-  display: flex;
-  cursor: pointer;
-}
+  li {
+    width: 120px;
+    height: 120px;
+    border-bottom: 1px solid black;
+    background: silver;
+    display: flex;
+    cursor: pointer;
 
-nav-browser div ul li:hover {
-  background: whitesmoke;
-}
+    &:hover {
+        background: whitesmoke;
+    }
 
-nav-browser div ul li i {
-  margin: auto;
-  display: block;
+    i {
+        margin: auto;
+        display: block;
+    }
+  }
 }
 
 div.main-canvas {

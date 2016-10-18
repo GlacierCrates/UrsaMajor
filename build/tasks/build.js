@@ -9,6 +9,16 @@ var notify = require('gulp-notify');
 var browserSync = require('browser-sync');
 var typescript = require('gulp-typescript');
 var htmlmin = require('gulp-htmlmin');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+
+var sassOptions = {
+    outputStyle: 'expanded'
+};
+
+var autoPrefixerOptions = {
+    browsers: ['last 2 versions', '> 1%']
+};
 
 // transpiles changed es6 files to SystemJS format
 // the plumber() call prevents 'pipe breaking' caused
@@ -44,6 +54,16 @@ gulp.task('build-css', function() {
     .pipe(changed(paths.output, {extension: '.css'}))
     .pipe(gulp.dest(paths.output))
     .pipe(browserSync.stream());
+});
+
+// compile global SASS in /styles
+gulp.task('build-sass', function() {
+  return gulp.src(paths.styleSource)
+    .pipe(sourcemaps.init())
+    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(sourcemaps.write())
+    .pipe(autoprefixer())
+    .pipe(gulp.dest(paths.styleOutput));
 });
 
 // this task calls the clean task (located
