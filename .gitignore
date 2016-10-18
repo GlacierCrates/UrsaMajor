@@ -262,3 +262,6 @@ coverage
 test/e2e/dist
 /typings
 /export
+
+# Project-specific
+/styles/styles.css
