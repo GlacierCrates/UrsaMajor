@@ -1,0 +1,1 @@
+exports.APP_TITLE = 'Ursa Major';
